@@ -3,7 +3,7 @@
 set -eu
 
 export NODE_OPTIONS=--openssl-legacy-provider
-export PORT=3001
+export PORT=3000
 
 npm ci
 npm run build
@@ -20,4 +20,4 @@ if ! kill -0 "$APP_PID" 2>/dev/null; then
 fi
 
 echo "Application started with PID: $APP_PID"
-echo "Visit http://localhost:3001"
+echo "Visit http://localhost:3000"
